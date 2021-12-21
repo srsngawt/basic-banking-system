@@ -1,0 +1,193 @@
+body{
+    background-color: violet;
+}
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:Wide Latin;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:absolute;
+    left: 878.8px;
+    top:8px;
+}
+ul li{
+    float:left;
+    font-size:20px;
+    width:130px;
+    height:10px;
+    vertical-align:middle;
+    text-align:center;
+    line-height:40px;
+    opacity:0.5;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    padding:10px;
+}
+ul li a:hover{
+    color:black;
+    background-color:white;
+    opacity:0.5;
+    text-decoration:none;
+}
+label{
+    font-family: Corbel Light;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.select-style {
+    padding: 12px 20px;
+    font-family: Corbel Light;
+    font-size: 1.15rem;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 19rem;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+.select-style select {
+    padding: 0px 3rem;
+    width: 18rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select-style:after {
+    top: 50%;
+    left: 85%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+.select-style select:focus {
+    outline: none;
+}
+
+.header{
+    display: flex;
+    font-size: 2.7rem;
+    padding:5px 20px;
+    font-family: Berlin Sans FB Demi;
+    background-color:#726a95;
+    width:65%;
+    margin: auto;
+}
+.footer{
+    display: flex;
+    padding:5px 20px;
+    background-color:#726a95;
+    width:65%;
+    margin: auto;
+}
+.footer1{
+    width: 30%;
+    font-size: 1.15rem;
+    text-align: left;
+    font-family:Bahnschrift;
+}
+.footer2{
+    font-size: 1.4rem;
+    width: 70%;
+    text-align: right;
+}
+a{
+    margin:0px 1px;
+    color:Black;
+}
+.button2 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.675rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button2:hover,
+  .button2:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .button2:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button2:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+  input[type=text] {
+    padding: 0.3rem;
+    font-family: Corbel Light;
+    font-size: 1.15rem;
+    width: 19rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=number] {
+    padding: 0.3rem;
+    font-family: Corbel Light;
+    font-size: 1.15rem;
+    width: 19rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .element{
+      margin-bottom: 1rem;
+  }

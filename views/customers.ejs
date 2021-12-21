@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Net Banking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        Bank of <span style="color:white; padding-left:7px; padding-right:7px"> NET </span> Banking
+        <ul>
+            <li valign="middle"><a href="/">Home</a></li>
+            <li valign="middle"><a href="/transactions"> Transactions</a></li>
+            <li valign="middle"><a href="/"> Help</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <h1><%= name %></h1>
+    <center>
+        <table border="0" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Balance</th>
+            </tr>
+            <% customers.forEach(function(customer){ %>
+                <tr>
+                    <td><%= customer.name %></td>
+                    <td><%= customer.email %></td>
+                    <td><%= customer.balance %></td>
+                </tr>
+
+            <% }) %>
+        </table>
+        <br>
+        
+        <hr width="53.1%">
+        <div class="senderblock"> 
+            💰 Do Transaction 💰
+        </div>
+        <form action="/pay" method="post">
+            <label for="sender">Sender (Customer): </label>
+        
+            <select name="sender" id="sender" class="select-style" required>
+                <% customers.forEach(function(customer){ %>
+                    <option value="<%= customer.email%>" > <%= customer.name %> </option>
+                <% }) %>
+            </select>
+            <br>
+            <br>
+            <button type="submit" class="button2">Transfer</button>
+        </form>
+    </center>
+    <br>
+    <br>
+    <div class="footer">
+        <div class="footer1">Ⓒ COPYRIGHT <span style="font-weight: bold; color: white;">Bank of Net Banking.</div>
+        <div class="footer2">
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>  
+            <a href="https://www.linkedin.com/in/shubham-sangawat-ba4b661b1/"><i class="fa fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/shubhamr1415/"><i class="fa fa-instagram"></i></a>  
+            <a href="https://www.facebook.com/shubham.sangawat"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

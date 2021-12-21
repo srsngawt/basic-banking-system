@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Net Banking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+<body onload="hideData()">
+    <div class="header">
+        <div class="bank">
+            Bank of <span style="color:white; padding-left:7px; padding-right:7px"> NET </span> Banking 
+        </div>
+        <ul>
+            <li valign="middle"><a href="/">Home</a></li>
+            <li valign="middle"><a href="/customers"> Customers</a></li>
+            <li valign="middle"><a href="/"> Help</a></li>
+        </ul>
+
+    </div>
+    <div class="mainContainer">
+        <div class="container1">
+            <div class="mainImg">
+                <img src="./img/img1.png">
+            </div>
+            <div class="img">
+                <div class="img1">
+                    <img src="./img/img2.png">
+                </div>
+                <div class="img2">
+                    <img src="./img/img3.jpg">
+                </div>
+                
+            </div>   
+        </div>
+        <div class="conatiner2">
+            <center>
+            <div class="txt"> 
+                <img src="./img/img4.png" style="border-radius: 0%;">
+                <p> Money Transaction </p>
+                
+            </div>
+            <div class="frm">
+                <form>
+                    <button class="button1" id="btn1" type="button" onclick="display()">Get Started</button>
+                    <br>
+                    <br>
+                    <button formaction="/customers" class="button2" id="btn2" type="submit" value="Money Transfer">Money Transfer</button>
+                    <button formaction="/transactions" class="button2" id="btn3" type="submit" value="Transactons History">Transactons History</button>
+                </form>
+            </div>
+            </center>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <div class="footer">
+        <div class="footer1">Ⓒ COPYRIGHT <span style="font-weight: bold; color: white;">Bank of Net Banking.</div>
+        <div class="footer2">
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>  
+            <a href="https://www.linkedin.com/in/shubham-sangawat-ba4b661b1/"><i class="fa fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/shubhamr1415/"><i class="fa fa-instagram"></i></a>  
+            <a href="https://www.facebook.com/shubham.sangawat"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+    <script>
+        function hideData(){
+            document.getElementById("btn2").style.visibility="hidden";
+            document.getElementById("btn3").style.visibility="hidden";
+        }
+        function display(){
+            document.getElementById("btn1").style.visibility="hidden";
+            document.getElementById("btn2").style.visibility="visible";
+            document.getElementById("btn3").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

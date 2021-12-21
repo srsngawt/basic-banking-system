@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Net Banking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+    <div class="header">
+        Bank of <span style="color:white; padding-left:7px; padding-right:7px"> NET </span> Banking
+        <ul>
+            <li valign="middle"><a href="/">Home</a></li>
+            <li valign="middle"><a href="/customers"> Customers</a></li>
+            <li valign="middle"><a href="/"> Help</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <h1>Payment</h1>
+    <center>
+    <form class="form" action="/transactions" method="post">
+    <table cellspaccing="10px">
+            <tr>
+            <div class="element">
+                <td align="center">
+                    <label for="Sender">Sender :  </label>
+                </td>
+                <td align="center">
+                    <input type="text" readonly="" value="<%= name.name %>" style="background-color:thistle;" name="sender">
+                </td>
+            </div>
+            </tr>
+            <tr>
+            <div class="element">
+                <td align="center">
+                    <label for="balance">Balance : </label>
+                </td>
+                <td align="center">
+                    <input type="number" readonly="" value="<%= name.balance %>" style="background-color:thistle;" name="balance">
+                </td>
+            </div>
+            </tr>
+            <tr>
+            <div class="element">
+                <td align="center">
+                    <label for="Receiver">Reciever : </label>
+                </td>
+                <td align="center">
+                    <select name="receiver" id="receiver" class="select-style" required>
+                        <% customers.forEach(function(customer){ %>
+                            <option value="<%=customer.email%>" > <%= customer.name %> </option>
+                        <% }) %>
+                    </select>
+                </td>
+                </div>
+                </tr>
+                <tr>
+                <div class="element">
+                    <td align="center">
+                        <label for="amount">Amount : </label>
+                    </td>
+                    <td align="center">
+                        <input type="number" max="<%= name.balance %>"  placeholder="Enter Amount here." name="amount">
+                    </td>
+                </div>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" onclick="showAlert()" class="button2">Send Money</button>
+                    </td>
+                </tr>
+        </table>
+    </form>
+    </center>
+    <br><br><br><br>
+    <div class="footer">
+        <div class="footer1">Ⓒ COPYRIGHT <span style="font-weight: bold; color: white;">Bank of Net Banking.</div>
+        <div class="footer2">
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>  
+            <a href="https://www.linkedin.com/in/shubham-sangawat-ba4b661b1/"><i class="fa fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/shubhamr1415/"><i class="fa fa-instagram"></i></a>  
+            <a href="https://www.facebook.com/shubham.sangawat"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+    <script>
+        function showAlert(){
+            alert("Dear, Your Trasaction is successfully commited.");
+        }
+    </script>
+</body>
+</html>

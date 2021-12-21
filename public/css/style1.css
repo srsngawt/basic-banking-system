@@ -1,0 +1,224 @@
+body{
+    background-color: violet;
+}
+.header{
+    display: flex;
+    font-size: 2.7rem;
+    padding:5px 70px;
+    font-family: Berlin Sans FB Demi;
+    background-color:#726a95;
+    width:90vw;
+    margin: auto;
+    margin-top: 0px;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:absolute;
+    left:1100px;
+    top:8px;
+}
+ul li{
+    float:left;
+    font-size:20px;
+    width:110px;
+    height:10px;
+    vertical-align:middle;
+    text-align:center;
+    line-height:40px;
+    opacity:0.5;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    padding:10px;
+}
+ul li a:hover{
+    color:black;
+    background-color:white;
+    opacity:0.5;
+    text-decoration:none;
+}
+.mainContainer{
+    display: flex;
+}
+.container1{
+    display:block;
+    width:40%;
+    margin-top: 2rem;
+    background-color: #003f47;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    border-radius: 100%;
+    margin-left:4rem;
+}
+.container2{
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+}
+.footer{
+    display: flex;
+    padding:5px 0px;
+    background-color:#726a95;
+    width:99vw;
+    margin: auto;
+}
+.footer1{
+    margin-left: 70px;
+    width: 30%;
+    font-size: 1.15rem;
+    text-align: left;
+    font-family:Bahnschrift;
+}
+.footer2{
+    margin-right: 70px;
+    font-size: 1.4rem;
+    width: 70%;
+    text-align: right;
+}
+a{
+    margin:0px 0px;
+    color:Black;
+}
+.mainImg{
+    display: block;
+    width:30%;
+    margin-top: 5.4rem;
+    margin-left:11.5rem;
+    margin-right: auto;
+}
+.img{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.4rem;
+    margin-bottom: 5.0rem;
+}
+.img1{
+    display: inline-block;
+    margin:0px;
+    margin-left: 4.5rem;
+    margin-right: 1rem;
+}
+.img2{
+    display: inline-block;
+    margin: 0px auto;
+    margin-right: 7.5rem;
+    margin-top:37px;
+}
+.txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    margin-top:4rem;
+    margin-left: 10rem;
+}
+.frm{
+    width: 100%;
+    margin-top:1.6rem;
+    margin-left: 10rem;
+}
+img{
+    border-radius: 50%;
+    width:14.2rem !important;
+}
+
+
+/* CSS */
+.button1 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 35px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 0px;
+  min-width: 0;
+  outline: none;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  width: 40%;
+  will-change: transform;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.button1:disabled {
+  pointer-events: none;
+}
+
+.button1:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button1:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* CSS */
+.button2 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button2:hover,
+.button2:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button2:hover {
+  transform: translateY(-1px);
+}
+
+.button2:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
